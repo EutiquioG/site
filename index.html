@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Raíz Vital</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/Logo.jpeg" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+
+        <meta charset="UTF-8">
+  <title>Video Modal</title>
+  <style>
+    /* Estilos del modal */
+    .modal {
+      display: block; /* Mostrar al inicio */
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .modal-content {
+      position: relative;
+      background-color: #000;
+      margin: 10% auto;
+      padding: 0;
+      width: 80%;
+      max-width: 700px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      border-radius: 10px;
+    }
+
+    .close {
+      color: #fff;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 35px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Modal -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="cerrarModal()">&times;</span>
+    <video id="introVideo" autoplay controls>
+      <source src="tu_video.mp4" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+  </div>
+</div>
+
+<script>
+  // Cerrar modal manualmente
+  function cerrarModal() {
+    document.getElementById("videoModal").style.display = "none";
+    document.getElementById("introVideo").pause();
+  }
+
+  // Cerrar automáticamente al finalizar el video
+  document.addEventListener("DOMContentLoaded", function () {
+    var video = document.getElementById("introVideo");
+    video.onended = function () {
+      document.getElementById("videoModal").style.display = "none";
+    };
+  });
+</script>
+
+
+
+    </head>
+
+    <body>
+        <!-- Top Bar Start -->
+        <div class="top-bar d-none d-md-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="top-bar-left">
+                            <div class="text">
+                                <i class="fa fa-phone-alt"></i>
+                                <h2>+57 3105103702</h2>
+                                <p>Para citas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="top-bar-right">
+                            <div class="social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+            <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+                <div class="container-fluid">
+
+                    <!-- Contenedor para el título y subtítulo -->
+                    <div class="d-flex flex-column align-items-start">
+                        <a href="index.html" class="navbar-brand mb-0">RAIZ VITAL</a>
+                        <br>
+                        <h6 class="mb-0 text-light" style="font-weight: normal;">Centro Holístico para Gestantes</h6>
+                    </div>
+
+                    <!-- Botón para menú responsive -->
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+        <!-- Menú de navegación -->
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav ml-auto">
+                                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                                <a href="about.html" class="nav-item nav-link">Acerca de</a>
+                                <a href="service.html" class="nav-item nav-link">Cumplimiento normativo</a>
+                                <a href="contact.html" class="nav-item nav-link">Contacta con nosotros</a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+        <!-- Nav Bar End -->
+
+
+        <!-- Hero Start -->
+        <div class="hero">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hero-text">
+                            <h1>Armonía para ti, amor para tu bebé</h1>
+                            <div class="hero-btn">
+                                <a class="btn" href="">Unete ahora</a>
+                                <a class="btn" href="">Contacta con nosotras</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hero-image">
+                            <img src="img/logo.png" alt="Hero Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+        <!-- About Start -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="about-img">
+                            <img src="img/about.png" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6">
+                        <div class="section-header text-left">
+                            <p>Aprende sobre nosotras</p>
+                            <h2>Bienvenidos a Raíz Vital</h2>
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                En Raíz Vital, creemos que el bienestar comienza desde el primer instante de la vida. Somos un centro especializado en el acompañamiento integral de la mujer gestante, ofreciendo una variedad de servicios diseñados para apoyar cada dimensión de esta etapa tan especial: física, emocional, mental y espiritual.
+
+                                Si bien nuestras clases de yoga prenatal son uno de los pilares de nuestro enfoque, no nos limitamos exclusivamente a esta práctica. En Raíz Vital también ofrecemos un completo Centro de Servicios Integrales, donde cada madre encuentra herramientas para vivir un embarazo consciente, saludable y lleno de bienestar.
+                            </p>
+                            <p>
+                                Nuestros servicios incluyen:
+                            </p>
+                            <p>
+                                Yoga prenatal, adaptado a cada trimestre del embarazo. <br>
+
+                                &middot;  Terapia holística, para equilibrar cuerpo, mente y energía.<br>
+
+                                &middot; Meditación guiada, que promueve la serenidad mental y la conexión interior.<br>
+
+                                &middot; Pilates prenatal, para fortalecer el cuerpo y mejorar la postura.<br>
+
+                                &middot; Acupuntura, como apoyo para aliviar molestias y mejorar el bienestar general.<br>
+
+                                &middot; Homeopatía, con tratamientos naturales y seguros para cada etapa del embarazo.<br>
+
+                                    Contamos con un equipo humano cálido y profesional, compuesto por instructoras certificadas y terapeutas especializados en maternidad. 
+                                    En cada sesión, creamos un espacio seguro, amoroso y respetuoso donde la mujer gestante puede conectar consigo misma, con su bebé y con otras madres en su mismo camino.
+
+                                    En Raíz Vital, acompañamos a cada mujer a vivir su embarazo como una experiencia transformadora, plena y empoderada.
+                            </p>
+                            <a class="btn" href="">Mas información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Service Start -->
+        <div class="service">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Que hacemos</p>
+                    <h2>Yoga para la salud</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-workout"></i>
+                            </div>
+                            <h3>Sanar emociones</h3>
+                            <p>
+                                En nuestro centro holístico para gestantes, te acompañamos a liberar emociones guardadas y reconectar con tu equilibrio interior a través de la meditación, la homeopatía y terapias energéticas que nutren tu bienestar emocional.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item active">
+                            <div class="service-icon">
+                                <i class="flaticon-workout-1"></i>
+                            </div>
+                            <h3>Refresca el cuerpo</h3>
+                            <p>
+                               Con prácticas como pilates prenatal, acupuntura y masajes terapéuticos, ayudamos a tu cuerpo a mantenerse ágil, liviano y en armonía durante cada etapa de tu embarazo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-workout-2"></i>
+                            </div>
+                            <h3>Mente y Serenidad</h3>
+                            <p>
+                                Ofrecemos espacios de meditación guiada y respiración consciente que calman la mente, reducen el estrés y te preparan emocionalmente para una gestación y parto en serenidad.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-workout-3"></i>
+                            </div>
+                            <h3>Disfruta tu vida</h3>
+                            <p>
+                                Cada sesión en nuestro centro es una invitación a disfrutar de esta etapa única. Con terapias personalizadas, te ayudamos a vivir tu embarazo con vitalidad, alegría y conexión profunda contigo y tu bebé.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-workout-4"></i>
+                            </div>
+                            <h3>Cuerpo y Espiritualidad</h3>
+                            <p>
+                             Integramos prácticas como el yoga prenatal y la homeopatía para despertar tu consciencia corporal y espiritual, fortaleciendo el vínculo madre-bebé desde el interior
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-yoga-pose"></i>
+                            </div>
+                            <h3>Cuerpo y Mente</h3>
+                            <p>
+                              Nuestros programas combinan movimiento, respiración y atención plena para fortalecer tu cuerpo, equilibrar tu mente y brindarte un embarazo saludable y consciente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- Class Start -->
+        <div class="class">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Nuestras clases</p>
+                    <h2>Horarios</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul id="class-filter">
+                            <li data-filter="*" class="filter-active">Todas las clases</li>
+                            <li data-filter=".filter-1">Yoga prenatal</li>
+                            <li data-filter=".filter-2">Meditación</li>
+                            <li data-filter=".filter-3">Acupuntura</li>
+                            <li data-filter=".filter-4">Homeopatía</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row class-container">
+                    <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="class-wrap">
+                            <div class="class-img">
+                                <img src="img/yogaAirelibre.jpg" alt="Image">
+                            </div>
+                            <div class="class-text">
+                                <div class="class-teacher">
+                                    <img src="img/Cami.jpeg" alt="Image">
+                                    <h3>Alexandra Arrieta</h3>
+                                    <a href="">+</a>
+                                </div>
+                                <h2>Yoga prenatal al aire libre</h2>
+                                <div class="class-meta">
+                                    <p><i class="far fa-calendar-alt"></i>Dom, Mar, Jue</p>
+                                    <p><i class="far fa-clock"></i>9:00 - 10:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="class-wrap">
+                            <div class="class-img">
+                                <img src="img/primeraImagen.avif" alt="Image">
+                            </div>
+                            <div class="class-text">
+                                <div class="class-teacher">
+                                    <img src="img/Cami.jpeg" alt="Image">
+                                    <h3>Alexandra Arrieta</h3>
+                                    <a href="">+</a>
+                                </div>
+                                <h2>Yoga prenatal en el salón</h2>
+                                <div class="class-meta">
+                                    <p><i class="far fa-calendar-alt"></i>Dom, Mar, Jue</p>
+                                    <p><i class="far fa-clock"></i>9:00 - 10:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="class-wrap">
+                            <div class="class-img">
+                                <img src="img/TerapiaSonido.jpg" alt="Image">
+                            </div>
+                            <div class="class-text">
+                                <div class="class-teacher">
+                                    <img src="img/Leo.jpeg" alt="Image">
+                                    <h3>Maria leonis Zapa</h3>
+                                    <a href="">+</a>
+                                </div>
+                                <h2>Terapia de sonidos</h2>
+                                <div class="class-meta">
+                                    <p><i class="far fa-calendar-alt"></i>Dom, Mar, Jue</p>
+                                    <p><i class="far fa-clock"></i>9:00 - 10:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="class-wrap">
+                            <div class="class-img">
+                                <img src="img/acupuntura.jpg" alt="Image">
+                            </div>
+                            <div class="class-text">
+                                <div class="class-teacher">
+                                    <img src="img/Cami.jpeg" alt="Image">
+                                    <h3>Alexandra Arrieta</h3>
+                                    <a href="">+</a>
+                                </div>
+                                <h2>Acupuntura para aliviar náuseas</h2>
+                                <div class="class-meta">
+                                    <p><i class="far fa-calendar-alt"></i>Dom, Mar, Jue</p>
+                                    <p><i class="far fa-clock"></i>9:00 - 10:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="class-wrap">
+                            <div class="class-img">
+                                <img src="img/aceite.jpg" alt="Image">
+                            </div>
+                            <div class="class-text">
+                                <div class="class-teacher">
+                                    <img src="img/Leo.jpeg" alt="Image">
+                                    <h3>Maria Leonis Zapa</h3>
+                                    <a href="">+</a>
+                                </div>
+                                <h2>Aromaterapia con aceites según la necesidad</h2>
+                                <div class="class-meta">
+                                    <p><i class="far fa-calendar-alt"></i>Dom, Mar, Jue</p>
+                                    <p><i class="far fa-clock"></i>9:00 - 10:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="class-wrap">
+                            <div class="class-img">
+                                <img src="img/cuarzo.jpg" alt="Image">
+                            </div>
+                            <div class="class-text">
+                                <div class="class-teacher">
+                                    <img src="img/Leo.jpeg" alt="Image">
+                                    <h3>Maria Leonis Zapa</h3>
+                                    <a href="">+</a>
+                                </div>
+                                <h2>Cuarzo rosa para meditación y conexión emocional con el bebé.</h2>
+                                <div class="class-meta">
+                                    <p><i class="far fa-calendar-alt"></i>Dom, Mar, Jue</p>
+                                    <p><i class="far fa-clock"></i>9:00 - 10:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="class-wrap">
+                            <div class="class-img">
+                                <img src="img/Reiki.webp" alt="Image">
+                            </div>
+                            <div class="class-text">
+                                <div class="class-teacher">
+                                    <img src="img/Leo.jpeg" alt="Image">
+                                    <h3>Maria Leonis Zapa</h3>
+                                    <a href="">+</a>
+                                </div>
+                                <h2>Reiki</h2>
+                                <div class="class-meta">
+                                    <p><i class="far fa-calendar-alt"></i>Dom, Mar, Jue</p>
+                                    <p><i class="far fa-clock"></i>9:00 - 10:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-3 wow fadeInUp" data-wow-delay="1s">
+                        <div class="class-wrap">
+                            <div class="class-img">
+                                <img src="img/acupuntura2.jpg" alt="Image">
+                            </div>
+                            <div class="class-text">
+                                <div class="class-teacher">
+                                    <img src="img/Cami.jpeg" alt="Image">
+                                    <h3>Alexandra Arrieta</h3>
+                                    <a href="">+</a>
+                                </div>
+                                <h2>Acupuntura para aliviar dolor lumbar</h2>
+                                <div class="class-meta">
+                                    <p><i class="far fa-calendar-alt"></i>Dom, Mar, Jue</p>
+                                    <p><i class="far fa-clock"></i>9:00 - 10:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-4 wow fadeInUp" data-wow-delay="1s">
+                        <div class="class-wrap">
+                            <div class="class-img">
+                                <img src="img/aceite2.jpg" alt="Image">
+                            </div>
+                            <div class="class-text">
+                                <div class="class-teacher">
+                                    <img src="img/Leo.jpeg" alt="Image">
+                                    <h3>Maria Leonis Zapa</h3>
+                                    <a href="">+</a>
+                                </div>
+                                <h2>Remedios homeopáticos (acidez, insomnio, ansiedad)</h2>
+                                <div class="class-meta">
+                                    <p><i class="far fa-calendar-alt"></i>Dom, Mar, Jue</p>
+                                    <p><i class="far fa-clock"></i>9:00 - 10:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Class End -->
+        
+        
+        <!-- Discount Start -->
+        <div class="discount wow zoomIn" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Conecta cuerpo y mente</p>
+                    <h2>Por la compra de nuestros productos <span>homeopáticos </span>recibe una clase de yoga gratuita.</h2>
+                </div>
+                <div class="container discount-text">
+                    <a class="btn">Únete ahora</a>
+                </div>
+            </div>
+        </div>
+        <!-- Discount End -->
+        
+        
+        <!-- Price Start -->
+        <div class="price">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Paquetes</p>
+                    <h2>Plan de precios</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="price-item">
+                            <div class="price-header">
+                                <div class="price-title">
+                                    <h2>Bienestar Holístico para Gestantes</h2>
+                                </div>
+                                <div class="price-prices">
+                                    <h2><small>$</small>180,000<span>/ COL</span></h2>
+                                </div>
+                            </div>
+                            <div class="price-body">
+                                <div class="price-description">
+                                    <ul>
+                                        <li>Masaje prenatal con aceites naturales</li>
+                                        <li>Infusión relajante para embarazadas</li>
+                                        <li>Guía ilustrada de yoga prenatal (5 posturas clave por trimestre)</li>
+                                        <li>Aromaterapia  con aceites segun la necesidad</li>
+                                        <li>Cuarzo rosa (para meditación y conexión emocional con el bebé)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-footer">
+                                <div class="price-action">
+                                    <a class="btn" href="">Únete ahora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="price-item featured-item">
+                            <div class="price-header">
+                                <div class="price-status">
+                                    <span>Popular</span>
+                                </div>
+                                <div class="price-title">
+                                    <h2>Consulta de Homeopatía + Kit de Remedios</h2>
+                                </div>
+                                <div class="price-prices">
+                                    <h2><small>$</small>220,000<span>/ COL</span></h2>
+                                </div>
+                            </div>
+                            <div class="price-body">
+                                <div class="price-description">
+                                    <ul>
+                                        <li>Evaluación inicial con homeópata especializado (40  minu)</li>
+                                        <li>3 remedios homeopáticos.</li>
+                                        <li>Guía de uso y seguimiento por WhatsApp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-footer">
+                                <div class="price-action">
+                                    <a class="btn" href="">Únete ahora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="price-item featured-item">
+                            <div class="price-header">
+                                <div class="price-status">
+                                    <span>Popular</span>
+                                </div>
+                                <div class="price-title">
+                                    <h2>Retiro "Día de Sanación Materna</h2>
+                                </div>
+                                <div class="price-prices">
+                                    <h2><small>$</small>350,000<span>/ COL</span></h2>
+                                </div>
+                            </div>
+                            <div class="price-body">
+                                <div class="price-description">
+                                    <ul>
+                                        <li>Clase de yoga al aire libre</li>
+                                        <li>Círculo de mujeres con terapia de sonido</li>
+                                        <li>Masaje express de 30 min</li>
+                                        <li>Almuerzo orgánico apto para gestantes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-footer">
+                                <div class="price-action">
+                                    <a class="btn" href="">Únete ahora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="price-item featured-item">
+                            <div class="price-header">
+                                <div class="price-status">
+                                    <span>Popular</span>
+                                </div>
+                                <div class="price-title">
+                                    <h2>Club Mamá Zen</h2>
+                                </div>
+                                <div class="price-prices">
+                                    <h2><small>$</small>500,000<span>/ COL</span></h2>
+                                </div>
+                            </div>
+                            <div class="price-body">
+                                <div class="price-description">
+                                    <ul>
+                                        <li>Acceso ilimitado a clases de pilates y meditación (8 sesiones/mes)</li>
+                                        <li>Descuento del 15% en otras terapias</li>
+                                        <li>Kit de bienestar mensual</li>
+                                        <li>Charlas exclusivas con experto</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-footer">
+                                <div class="price-action">
+                                    <a class="btn" href="">Únete ahora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="price-item">
+                            <div class="price-header">
+                                <div class="price-status">
+                                    <span>Premium</span>
+                                </div>
+                                <div class="price-title">
+                                    <h2>Premium - Embarazo Consciente</h2>
+                                </div>
+                                <div class="price-prices">
+                                    <h2><small>$</small>900,000<span>/ COL</span></h2>
+                                </div>
+                            </div>
+                            <div class="price-body">
+                                <div class="price-description">
+                                    <ul>
+                                        <li>4 sesiones de yoga prenatal</li>
+                                        <li>2 sesiones de acupuntura para aliviar náuseas o dolor lumbar</li>
+                                        <li>1 taller de respiración para el parto</li>
+                                        <li>Acceso a comunidad privada online</li>
+                                        <li>2 sesiones de reiki para gestantes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-footer">
+                                <div class="price-action">
+                                    <a class="btn" href="">Únete ahora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Price End -->
+        
+        
+        <!-- Testimonial Start -->
+        
+        <!-- Testimonial End -->
+
+
+        <!-- Team Start -->
+         <!-- Team Start -->
+        <div class="team">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Equipo de trabajo</p>
+                    <h2>Personal  Administrativo y Asistencial:</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-1.jpg" alt="Image">
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-text">
+                                <h2>Laura Rivera</h2>
+                                <p>Recepcionista</p>
+                                <p>Tecnólogo Administrativo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-2.jpg" alt="Image">
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-text">
+                                <h2>Sofia González</h2>
+                                <p>Asistente de Marketing</p>
+                                <p>Tecnólogo en publicidad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/testimonial-4.jpg" alt="Image">
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-text">
+                                <h2>Moises Ramirez</h2>
+                                <p>Contador</p>
+                                <p>Profesional</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/testimonial-2.jpg" alt="Image">
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-text">
+                                <h2>Ramiro Martinez</h2>
+                                <p>Administrador</p>
+                                <p>Profesional</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/Cami2.png" alt="Image">
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-text">
+                                <h2>Alexandra Arrieta</h2>
+                                <p>Instructora Yoga</p>
+                                <p>Edu. Fisica, fisioterapia y Kinesiologia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/testimonial-1.jpg" alt="Image">
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-text">
+                                <h2>Salome Valderrama</h2>
+                                <p>Acupunturista</p>
+                                <ul>
+                                    <li>Profional medicina alternativa</li>
+                                     <li>Especialización acupuntura</li>
+                                      <li>Medicina tradicional China</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/Leo2.jpeg" alt="Image">
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-text">
+                                <h2>Maria Leonis Zapa</h2>
+                                <p>Homeópata</p>
+                                <ul>
+                                    <li>Medico general</li>
+                                     <li>Especialización en homeopatía</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-3.jpg" alt="Image">
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-text">
+                                <h2>Sarah Mercado</h2>
+                                <p>Masajista Prenatal</p>
+                                <ul>
+                                    <li>Fisioterapeuta</li>
+                                     <li>Especialización en técnicasprenatales</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/auxiliar.jpg" alt="Image">
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-text">
+                                <h2>Pedro Ortega</h2>
+                                <p>Asistente de Terapias</p>
+                                <p>Auxiliar de enfermeria</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-4.jpg" alt="Image">
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-text">
+                                <h2>Magaly Leivaz</h2>
+                                <p>Psicóloga Perinatal</p>
+                                <ul>
+                                    <li>Profesional Psicóloga</li>
+                                    <li>Especialización Psicología clínica y salud mental materna</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+        <!-- Team End -->
+        <div class="team">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <h2>Personal  operativo:</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/limpieza.jpg" alt="Image">
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-text">
+                                <h2>Camilo Hernandez</h2>
+                                <p>Auxiliar de Limpieza</p>
+                                <p>Cursos técnicos en higiene Hospitalaria</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/Mensajero.jfif" alt="Image">
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-text">
+                                <h2>Sergio Calderon</h2>
+                                <p>Mensajero</p>
+                                <p>Bachiller</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Start -->
+        
+        <!-- Blog End -->
+
+
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info">
+                        <a href="index.html" class="footer-logo">Ra<span>iz</span> Vital</a>
+                        <h3>Calle 11 #12-10 Pueblo nuevo, Caucasia / Antioquia, COLOMBIA</h3>
+                        <div class="footer-menu">
+                            <p>+57 3105013702 - +57 3113464832 </p>
+                            <p>raiz.vital@gmail.com</p>
+                        </div>
+                        <div class="footer-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="#">raiz vital </a>, Todos los derechos reservados.</p>
+                        </div>
+                        <div class="col-md-6">
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            <p>Diseñado por <a href="https://htmlcodex.com">Eutiquio Gonzalez</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
