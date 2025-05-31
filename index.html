@@ -23,84 +23,8 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
-
-
         <meta charset="UTF-8">
-  <title>Video Modal</title>
-  <style>
-    /* Estilos del modal */
-    .modal {
-      display: block; /* Mostrar al inicio */
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0,0,0,0.8);
-    }
-
-    .modal-content {
-      position: relative;
-      background-color: #000;
-      margin: 10% auto;
-      padding: 0;
-      width: 80%;
-      max-width: 700px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-      border-radius: 10px;
-    }
-
-    .close {
-      color: #fff;
-      position: absolute;
-      top: 10px;
-      right: 25px;
-      font-size: 35px;
-      font-weight: bold;
-      cursor: pointer;
-      z-index: 1001;
-    }
-
-    video {
-      width: 100%;
-      border-radius: 10px;
-    }
-  </style>
 </head>
-<body>
-
-<!-- Modal -->
-<div id="videoModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="cerrarModal()">&times;</span>
-    <video id="introVideo" autoplay controls>
-      <source src="tu_video.mp4" type="video/mp4">
-      Tu navegador no soporta el video.
-    </video>
-  </div>
-</div>
-
-<script>
-  // Cerrar modal manualmente
-  function cerrarModal() {
-    document.getElementById("videoModal").style.display = "none";
-    document.getElementById("introVideo").pause();
-  }
-
-  // Cerrar automáticamente al finalizar el video
-  document.addEventListener("DOMContentLoaded", function () {
-    var video = document.getElementById("introVideo");
-    video.onended = function () {
-      document.getElementById("videoModal").style.display = "none";
-    };
-  });
-</script>
-
-
-
-    </head>
 
     <body>
         <!-- Top Bar Start -->
@@ -194,9 +118,11 @@
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-6">
                         <div class="about-img">
-                            <img src="img/about.png" alt="Image">
+                            <video src="videos/about.mp4" controls style="width: 100%; height: auto;">
+                                Tu navegador no soporta la etiqueta de video.
+                            </video>
                         </div>
-                    </div>
+                        </div>
                     <div class="col-lg-7 col-md-6">
                         <div class="section-header text-left">
                             <p>Aprende sobre nosotras</p>
